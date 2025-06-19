@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Kids</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #FFF8E1;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      background-color: #E0F7FA;
+    }
+    header img {
+      width: 200px;
+      border-radius: 30px;
+      box-shadow: 0 0 20px #ffce00;
+    }
+    header h1 {
+      color: #00796B;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    header p {
+      font-size: 20px;
+      color: #00695C;
+    }
+    .language-buttons {
+      text-align: center;
+      margin: 20px;
+    }
+    .language-buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #FFC107;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .content {
+      padding: 20px;
+    }
+    .activity {
+      background-color: #fff;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 5px solid #00796B;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #E0F7FA;
+      margin-top: 20px;
+    }
+    .social-button {
+      margin: 10px;
+      padding: 10px 15px;
+      background-color: #FF4081;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+  <script>
+    function cambiarIdioma(idioma) {
+      document.getElementById("es").style.display = "none";
+      document.getElementById("en").style.display = "none";
+      document.getElementById("fr").style.display = "none";
+      document.getElementById(idioma).style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="Logo de la app de la marina.png" alt="Logo SunnyKids">
+    <h1>¡Bienvenidos a Sunny Kids!</h1>
+    <p>La mejor web para actividades divertidas para los pequeños de casa.</p>
+  </header>
+
+  <div class="language-buttons">
+    <button onclick="cambiarIdioma('es')">Español</button>
+    <button onclick="cambiarIdioma('en')">English</button>
+    <button onclick="cambiarIdioma('fr')">Français</button>
+  </div>
+
+  <div id="es" class="content">
+    <h2>Contactos</h2>
+    <p>Teléfono Alma: 611384985</p>
+    <p>Teléfono Leyre: 722800994</p>
+    <p>Email Alma: arojser3005@gmail.com</p>
+    <p>Email Leyre: leyrepricess13@gmail.com</p>
+
+    <h2>Actividades y Precios</h2>
+    <div class="activity">
+      <strong>Día 1 - Pintando con burbujas:</strong> 6 de julio a las 17:45. Precio: 2€<br>
+      Pintamos soplando burbujas llenas de pintura sobre papel. ¡Ideal para peques!
+    </div>
+    <div class="activity">
+      <strong>Botella de la calma:</strong> Decoramos botellas con purpurina para relajarnos. Incluido en el día 1.
+    </div>
+    <div class="activity">
+      <strong>Día 2 - Plantando lentejas:</strong> 7 de julio a las 12:00. Precio: Día completo 6€<br>
+      Sembramos lentejas y aprendemos a cuidar seres vivos.
+    </div>
+    <div class="activity">
+      <strong>Personalizo mi mochila:</strong> A las 17:00. Decoramos bolsas con fieltro y colores.
+    </div>
+    <div class="activity">
+      <strong>Abanicos con forma:</strong> Creamos abanicos para combatir el calor.
+    </div>
+    <div class="activity">
+      <strong>Día 3 - Sales de colores:</strong> 8 de julio a las 11:30. Precio: Día completo 6€<br>
+      Coloreamos sales para crear un tarro decorativo.
+    </div>
+    <div class="activity">
+      <strong>Regalo para papá y mamá:</strong> Actividad sorpresa.
+    </div>
+    <div class="activity">
+      <strong>Final de temporada:</strong> Entrega de diplomas y premios. Encuesta para elegir horario (12:00 a 21:00).
+    </div>
+    <p><strong>Descuentos:</strong> Si vienes con dos familiares, 50% de descuento. Si compras una pulsera por 1€, tienes un 10% de descuento.</p>
+
+    <h2>Formulario de Inscripción</h2>
+    <form>
+      <label>Nombre del niño/a:</label><br>
+      <input type="text"><br>
+      <label>Email de la madre/padre:</label><br>
+      <input type="email"><br>
+      <label>Alergias:</label><br>
+      <textarea></textarea><br>
+      <input type="submit" value="Me apunto">
+    </form>
+
+    <h3>Cambiar horario</h3>
+    <textarea placeholder="Escribe aquí si necesitas cambiar el horario..."></textarea>
+
+    <h2>Hoja de reclamaciones</h2>
+    <textarea placeholder="Escribe aquí tus sugerencias o reclamaciones..."></textarea>
+
+    <h2>Síguenos</h2>
+    <a class="social-button" href="https://www.instagram.com/sunny.kids.ofc" target="_blank">Instagram</a>
+    <a class="social-button" href="https://www.tiktok.com/@sunny.kids.ofc" target="_blank">TikTok</a>
+  </div>
+
+  <!-- Inglés y Francés traducidos aquí... -->
+  <div id="en" class="content" style="display:none;">
+    <!-- Aquí iría la traducción al inglés -->
+    <p>Coming soon...</p>
+  </div>
+
+  <div id="fr" class="content" style="display:none;">
+    <!-- Aquí iría la traducción al francés -->
+    <p>À venir...</p>
+  </div>
+
+  <div class="footer">
+    <p>&copy; Sunny Kids 2025</p>
+  </div>
+</body>
+</html>
